@@ -1,0 +1,73 @@
+/* ===== GENERAL STYLING ===== */
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR BLUR EFFECT ===== */
+nav {
+    backdrop-filter: blur(10px);
+}
+
+/* ===== PROFILE IMAGE ANIMATION ===== */
+.profile-img {
+    transition: 0.5s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* ===== PROJECT CARD EFFECT ===== */
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== BUTTON EFFECT ===== */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FADE ANIMATION ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ===== LIGHT MODE ===== */
+.light-mode {
+    background: #ffffff;
+    color: #000000;
+}
+
+.light-mode nav {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.light-mode .project-card {
+    background: #f3f4f6;
+    color: #000;
+}
+
+.light-mode .btn {
+    background: #e5e7eb;
+    color: #000;
+}
+
+.light-mode a {
+    color: #2563eb;
+}
